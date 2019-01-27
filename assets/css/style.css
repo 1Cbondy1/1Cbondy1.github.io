@@ -1,0 +1,274 @@
+/* Rebuilt-Portfolio */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body {
+    background: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: left;
+    padding: 20px;
+    margin: 0px;
+}
+
+#border-line {
+    border: lightgrey solid .5px;
+    margin: 0px 20px 0px 20px;
+}
+
+.row-margin {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.text-info {
+    text-align: justify;
+    font-family: serif;
+    text-indent: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.section {
+    padding: 20px;
+}
+
+ul .right {
+    width: 100%;
+    background: white;
+}
+
+/* Navbar */
+
+nav {
+    z-index: 1;
+    background: #333333;
+    text-align: center;
+    height: 64px;
+    line-height: 64px;
+}
+
+nav .brand-logo {
+    left: 0%;
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+nav .sidenav-trigger i {
+    height: 64px;
+    line-height: 64px;
+}
+
+#footer {
+    z-index: 2;
+    position: fixed;
+    bottom: 0px;
+    background: linear-gradient(white, lightgrey);
+    width: 100%;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    border-top: 1px solid lightgrey;
+}
+
+/* About me */
+
+#about-style {
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px lightgrey;
+}
+
+#image {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    float: left;
+    width: 220px;
+    height: 220px;
+    border-radius:2px;
+}
+
+/* Contact */
+
+.form-info {
+    text-align: justify;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.links {
+    color: black;
+    text-align: left;
+    padding: 20px 20px 0px 20px;
+}
+
+#contact {
+    padding-left: 5px;
+}
+
+input[type=text]:not(.browser-default) {
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    font-size: 14px;
+    background: white;
+}
+
+textarea {
+    background: white;
+    height: 150px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid lightgrey;
+}
+
+.btn {
+    background-color: #00C39C;
+    color: white;
+    border-radius: 4px;
+    margin-top: 12px;
+    border: none;
+}
+
+/* Portfolio */
+
+ .portfolio {
+     position: relative;
+     margin: auto;
+     display: inline-block;
+     margin-bottom: 10px;
+ }
+
+ #image1 {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.card-image {
+    height: 250px;
+    width: 270px;
+}
+
+.card {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.card .card-action:last-child {
+    background-color: #00CA9C;
+}
+
+a {
+    font-size: 16px;
+    margin: 0px;
+    text-align: left;
+}
+
+/* Design */
+
+#d-img {
+    border-radius: 4px;
+}
+
+.carousel .carousel-item>img {
+    padding:0px 20px 0px 20px;
+}
+
+.carousel-item .active {
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+
+/* Sidenav */
+
+h3 {
+    background-color: #333333;
+    font-size: 25px;
+    margin: 0px auto 0px auto;
+    color: #fff;
+    width: 100%;
+    line-height: 64px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+ul #mobile-demo .sidenav {
+    text-align: center;
+    margin: 0px;
+}
+
+.sidenav .divider {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* media query for medium and small screens */
+@media screen and (max-width: 992px) {
+    nav .brand-logo {
+        left: 50%;
+        display: inline-block;
+        color: white;
+        font-size: 25px;
+    }
+}
+
+/* media query small screens */
+@media screen and (max-width: 475px) {
+    #image {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        float: none;
+        width: 250px;
+        height: 270px;
+    }
+    .slider .slides {
+        height: 300px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .slider .slides {
+        background-color:transparent;
+    }
+
+    .slider .indicators .indicator-item {
+        height: 12px;
+        width: 12px;
+        margin: 8px 8px 8px 8px;
+    }
+}
+/* media query for tiny screens */
+@media screen and (max-width: 347px) {
+    .card-image {
+        height: auto;
+        width: auto;
+    }
+    .card {
+        display: inline-block;
+        margin: 0px 10px 0px 10px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+}
