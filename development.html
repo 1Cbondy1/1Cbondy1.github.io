@@ -1,5 +1,4 @@
 <!-- Rebuilt-Portfolio -->
-<!-- Built using the Materialize framework, this portfolio is intended to demonstrate web development abilities and showcase UX/UI design sensibilities -->
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -31,13 +30,13 @@
 </head>
 
 <body>
-
+    
     <header>
         <!-- Desktop nav with links to other pages-->
         <nav>
             <div class="container">
                 <div class="nav-wrapper">
-                <a class="brand-logo">Clayton Bondy</a>
+                <a class="brand-logo">Development</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html">Home</a></li>
@@ -61,30 +60,63 @@
         </ul>
     </header>
 
+    <div class="container padding-top">
+        <div class="row row-margin" id= "about-style">
+            <div class= "col s12">
 
-    <div class="parallax-container">
-      <div class="parallax"><img src="assets/images/profile-parallax.jpg" alt="parallax"></div>
-    </div>
+                <!-- Ground App -->
+                <a href="https://1cbondy1.github.io/Ground-App/">
+                    <img class="portfolio-card" src="assets/images/thumbnails/ground.jpg" alt="thumb">
+                </a>
 
-    <!--created a container where I organized the text into rows and columns and overid the css to add some customization-->
-    <div class="container">
-        <div class="row row-margin">
-            <div>
-                <div>
-                    <section class="section">
-                        <h2>
-                            Developer + Designer
-                        </h2>
-                        <div class="text-info">
-                            <p> I’ve always had a strong interest in design and technology. These interests are what drew me to LSU's School of Architecture, where I was conditioned to work in an intense, collaborative studio environment. It’s also where I picked up my first coding chops through a minor in digital media arts. I took the concepts I learned into practice, as a scenic designer for broadcast television in New York City. After working for a few years, I felt the pull towards a career in an emerging and faster-paced industry.</p><br>
-                            <p> I moved back to Austin and enrolled in The Coding Bootcamp UT. The content of the course was instantly fascinating to me. The Adobe Creative Suite tools that I've used for years can now be supplemented with JavaScript, React, and other technologies to add functionality to static designs. I hope to use this technical knowledge along with my background in design to jumpstart my career in UX/UI design and front-end development.</p>
-                        </div>
-                    </section>
-                </div>
+                <!-- Frinder Express App -->
+                <a href="https://gentle-escarpment-80143.herokuapp.com/">
+                    <img class="portfolio-card" src="assets/images/thumbnails/frinder.jpg" alt="thumb">
+                </a>
+
+                <!-- Grocherie -->
+                <a href="https://grocherie.herokuapp.com/">
+                    <img class="portfolio-card" src="assets/images/thumbnails/grocherie.jpg" alt="thumb">
+                </a>
+
+                <!-- Handle Burger -->
+                <a href="https://immense-escarpment-68288.herokuapp.com/">
+                    <img class="portfolio-card" src="assets/images/thumbnails/handle-burger.jpg" alt="thumb">
+                </a>
+
+                <!-- News Scraper -->
+                <a href="https://vast-mountain-73765.herokuapp.com/">
+                    <img class="portfolio-card" src="assets/images/thumbnails/news-scraper.jpg" alt="thumb">
+                </a>
+
+                <!-- Crystals Collector -->
+                <a href="https://1cbondy1.github.io/Crystals-Collector-Game/">
+                    <img class="portfolio-card" src="assets/images/thumbnails/crystals-collector.jpg" alt="thumb">
+                </a>
+
+                <!-- GifTastic -->
+                <a href="https://1cbondy1.github.io/GifTastic/">
+                    <img class="portfolio-card" src="assets/images/thumbnails/giftastic.jpg" alt="thumb">
+                </a>
+
+                <!-- Liri Node App -->
+                <a href="https://github.com/1Cbondy1/Liri-Node-App">
+                    <img class="portfolio-card" src="assets/images/thumbnails/liri-bot.jpg" alt="thumb">
+                </a>
+
+                <!-- Texas Trivia Game -->
+                <a href="https://1cbondy1.github.io/Trivia-Game-Basic/">
+                    <img class="portfolio-card" src="assets/images/thumbnails/texas-trivia.jpg" alt="thumb">
+                </a>
+
+                <!-- Justo React App -->
+                <a href="#">
+                    <img class="portfolio-card" src="assets/images/thumbnails/justo.jpg" alt="thumb">
+                </a>
             </div>
         </div>
     </div>
-    
+
     <footer id="footer">
         <span class="links">
             <a class="contact" href="mailto:claytonbondy@gmail.com"><i class="fa fa-envelope" style="font-size:24px"></i></a>
@@ -101,15 +133,9 @@
     </footer>
 
     <script type="text/javascript">
-
         $(document).ready(function(){
             $('.sidenav').sidenav();
         });
-
-        $(document).ready(function(){
-            $('.parallax').parallax();
-        });
-
     </script>
 </body>
 

@@ -16,8 +16,9 @@ body {
 h2 {
     font-size: 25px;
     text-align: left;
-    padding: 20px;
+    padding-bottom: 40px;
     margin: 0px;
+    text-align:center;
 }
 
 #border-line {
@@ -39,7 +40,7 @@ h2 {
 }
 
 .section {
-    padding: 20px;
+    margin: 20px;
 }
 
 ul .right {
@@ -47,10 +48,16 @@ ul .right {
     background: white;
 }
 
+.padding-top {
+    padding-top:50px;
+}
+
 /* Navbar */
 
 nav {
     z-index: 1;
+    position: fixed;
+    top: 0px;
     background: #333333;
     text-align: center;
     height: 64px;
@@ -64,6 +71,8 @@ nav .brand-logo {
     font-size: 25px;
     overflow: hidden;
     white-space: nowrap;
+    font-weight:100;
+    letter-spacing:3px;
 }
 
 nav .sidenav-trigger i {
@@ -73,25 +82,16 @@ nav .sidenav-trigger i {
 
 #footer {
     z-index: 2;
-    position: fixed;
-    bottom: 0px;
     background: linear-gradient(white, lightgrey);
     width: 100%;
     color: black;
-    padding-top: 30px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 12px;
     border-top: 1px solid lightgrey;
 }
 
 /* About me */
-
-#about-style {
-    background: white;
-    border: 1px solid lightgrey;
-    border-radius: 4px;
-    box-shadow: 2px 2px 4px lightgrey;
-}
 
 #image {
     margin-right: 20px;
@@ -117,7 +117,7 @@ nav .sidenav-trigger i {
     padding: 20px 20px 0px 20px;
 }
 
-#contact {
+.contact {
     padding-left: 5px;
 }
 
@@ -159,27 +159,17 @@ textarea {
     margin-bottom: 12px;
 }
 
-.card-image {
-    height: 250px;
-    width: 270px;
-}
-
-.card {
+.portfolio-card {
     display: inline-block;
-    margin: 0px 10px 0px 10px;
+    margin: 10px 10px 10px 10px;
     width: 270px;
-    margin-bottom: 20px;
+    max-width: 90%;
+    /* border-radius: 4px; */
+    box-shadow: grey 2px 2px 10px;
+    opacity: 1;
 }
-
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-    text-align: center;
-    margin: auto;
-    color: white;
-}
-
-.card .card-action:last-child {
-    background-color: #00CA9C;
-}
+  
+.portfolio-card:hover {opacity: .5}
 
 a {
     font-size: 16px;
@@ -222,6 +212,10 @@ ul #mobile-demo .sidenav {
 .sidenav .divider {
     margin: 0px;
     padding: 0px;
+}
+
+nav .sidenav-trigger {
+    margin:auto;
 }
 
 /* media query for medium and small screens */
