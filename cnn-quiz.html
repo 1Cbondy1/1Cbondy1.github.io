@@ -36,7 +36,7 @@
         <nav>
             <div class="container">
                 <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">UX/UI Design</a>
+                <a class="brand-logo">CNN Quiz Show</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html">Home</a></li>
@@ -60,10 +60,23 @@
         </ul>
     </header>
 
-    <div class="container padding-top">
-        <div class="row row-margin" id= "about-style">
-            <div>
-                <img style="width:100%" src="assets/images/design/ux/justo-ux-wireframes.jpg">
+    <div>
+        <img class="parallax-img" src="assets/images/design/cnn-quiz/cnn-quiz-02.jpg" alt="parallax"></div>
+    </div>
+
+    <div class="container">
+        <div class="row row-margin">
+            <!-- slider that displays scenic design projects -->
+            <div class="section">
+                <div class="text-info">
+                    <p>It’s not easy to get broadcast journalists to admit — on-air — that they do not know the answer to a question. But the news anchors at CNN grabbed the chance to have fun while representing their favorite charities on the CNN Quiz Show: Presidential Edition. This lively spirit inspired the set where Anderson Cooper challenged six anchor-team contestants to put their knowledge on the line in a colorful arena that featured an adaptation of the network’s iconic cubes as podiums. Warhol-inspired presidential portraits surrounding the studio allowed the show to shoot 360°. The program aired February 16 from CNN’s New York studios, with a live and loud studio audience.</p>
+                </div>
+            </div>
+            <div class="carousel carousel-slider">
+                <a class="carousel-item"><img src="assets/images/design/cnn-quiz/cnn-quiz-01.jpg"></a>
+                <a class="carousel-item"><img src="assets/images/design/cnn-quiz/cnn-quiz-03.jpg"></a>
+                <a class="carousel-item"><img src="assets/images/design/cnn-quiz/cnn-quiz-04.jpg"></a>
+                <a class="carousel-item"><img src="assets/images/design/cnn-quiz/cnn-quiz-05.jpg"></a>
             </div>
         </div>
     </div>
@@ -84,13 +97,16 @@
     </footer>
 
     <script type="text/javascript">
+
         $(document).ready(function(){
             $('.sidenav').sidenav();
         });
 
-        $(document).ready(function(){
-            $('.slider').slider();
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
         });
+
     </script>
 </body>
 

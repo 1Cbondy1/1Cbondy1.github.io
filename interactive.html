@@ -36,7 +36,7 @@
         <nav>
             <div class="container">
                 <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">UX/UI Design</a>
+                <a class="brand-logo">Interactive Design</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html">Home</a></li>
@@ -62,8 +62,18 @@
 
     <div class="container padding-top">
         <div class="row row-margin" id= "about-style">
-            <div>
-                <img style="width:100%" src="assets/images/design/ux/justo-ux-wireframes.jpg">
+            <!-- slider that displays scenic design projects -->
+            <div class="carousel carousel-slider">
+                <a class="carousel-item"><img src="assets/images/design/tencent/tencent-01.jpg"></a>
+                <a class="carousel-item"><img src="assets/images/design/tencent/tencent-02.jpg"></a>
+                <a class="carousel-item"><img src="assets/images/design/tencent/tencent-03.jpg"></a>
+                <a class="carousel-item"><img src="assets/images/design/tencent/tencent-04.jpg"></a>
+                <a class="carousel-item"><img src="assets/images/design/tencent/tencent-05.jpg"></a>
+            </div>
+            <div class="section">
+                <div class="text-info">
+                    <p>A true blend of media and built environment, the Tencent NBA studio directly aims to give the early pioneer of adopting live streaming content a formidable space to contextualize this enterprise. The main anchor area is defined by a gloss white fold that can be washed with colored LED light and features two of the studio’s main LED walls, behind and adjacent to the anchors. These expansive displays allow the anchors to compliment the live streamed content with a combination of analyses, discussions, dynamic graphics, and augmented reality, thus creating an enriched experience rather than forcing a traditional cut-to-video with anchor voice-over.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -84,13 +94,16 @@
     </footer>
 
     <script type="text/javascript">
+
         $(document).ready(function(){
             $('.sidenav').sidenav();
         });
 
-        $(document).ready(function(){
-            $('.slider').slider();
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
         });
+
     </script>
 </body>
 
