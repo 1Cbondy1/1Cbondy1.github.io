@@ -61,11 +61,20 @@
     </header>
 
     <div class="container padding-top">
-        <div class="row row-margin" id= "about-style">
-            <div>
-                <img style="width:100%" src="assets/images/design/ux/justo-ux-wireframes.jpg">
+        <div class="row">
+            <div class="section">
+                <h2>Justo - A Fairer Freelancing App</h2>
+                <img class="materialboxed" style="width:600px;max-width:100%" src="assets/images/design/ux/justo-ux-sketch.jpg">   
             </div>
+            <div class="section">
+                <img class="materialboxed" width="100%" src="assets/images/design/ux/justo-ux-wireframes.jpg"> 
+            </div>
+            <p class="section text-info">
+                Project III of my web-development certification at UT was Justo - A fairer freelance app. It required two slightly different user flows, one for employers and one for freelancers. After roles are autheticated at login, only relevant information would be displayed for each role. This wireframe assumes that freelancers would primarily be working at a desktop or laptop, while employers would primarily be using the app on a mobile device.
+            </p>
+            <hr>
         </div>
+
     </div>
 
     <footer id="footer">
@@ -89,7 +98,7 @@
         });
 
         $(document).ready(function(){
-            $('.slider').slider();
+            $('.materialboxed').materialbox();
         });
     </script>
 </body>
