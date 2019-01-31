@@ -238,6 +238,17 @@ a {
 
 /* Design */
 
+.ux-box {
+    width:600px;
+    max-width:100%;
+}
+
+.frame-box {
+    width:600px;
+    height:338px;
+    max-width:100%
+}
+
 /* Sidenav */
 
 h3 {
