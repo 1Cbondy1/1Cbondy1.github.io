@@ -235,9 +235,9 @@ textarea {
     top:0px;
     left:0px;
     opacity:0;
-    width:100%;
+    width:101%;
     height:100%;
-    background-color:red;
+    background:linear-gradient(#FF8D74,#FF5631);
     color:white;
     text-align:left;
     font-weight:100;
@@ -251,7 +251,7 @@ textarea {
 }
 
 .hover-color:hover {
-    opacity:0.85;
+    opacity:0.95;
 }
 
 .c-title {
