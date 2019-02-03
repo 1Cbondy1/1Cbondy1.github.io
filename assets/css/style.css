@@ -12,6 +12,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h1 {
@@ -215,14 +219,45 @@ textarea {
 }
 
 .card {
+    position:relative;
     display: inline-block;
-    margin: 0px 0px 0px 0px;
+    margin: 5px 5px 5px 5px;
     /* width: 270px; */
     max-width: 100%;
 }
 
-.card:hover {
+/* .card:hover {
     box-shadow: rgb(100, 100, 100) 5px 5px 20px;
+} */
+
+.hover-color {
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+    width:100%;
+    height:100%;
+    background-color:red;
+    color:white;
+    text-align:left;
+    font-weight:100;
+    padding:25px;
+    font-size:14px;
+    line-height:1.5;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+}
+
+.hover-color:hover {
+    opacity:0.85;
+}
+
+.c-title {
+    font-size:16px;
+    margin-bottom:10px;
+    text-align:center;
 }
 
 .card .card-content {
@@ -272,8 +307,13 @@ i.right {
 }
 
 .col .row {
-    margin-left:0;
-    margin-right:0;
+    margin:0;
+    padding:0;
+}
+
+.row .col {
+    margin:0;
+    padding:0;
 }
 
 a {
