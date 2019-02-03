@@ -1,5 +1,5 @@
-<!-- Rebuilt-Portfolio -->
-<!-- Built using the Materialize framework, this portfolio is intended to demonstrate web development abilities and showcase UX/UI design sensibilities -->
+<!-- Built using the Materialize framework -->
+<!-- This portfolio is intended to demonstrate web development abilities and showcase UX/UI design sensibilities -->
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -36,7 +36,7 @@
         <!-- Desktop nav with links to other pages-->
         <nav>
             <div class="container">
-                <div class="nav-wrapper">
+                <div class="nav-wrapper my-nav">
                 <a class="brand-logo">Clayton Bondy</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
@@ -62,24 +62,32 @@
     </header>
 
 
-    <div>
+    <!-- <div>
         <img class="parallax-img" style="padding-top:64px" src="assets/images/cover-photo.jpg" alt="parallax"></div>
-    </div>
+    </div> -->
 
-    <!--created a container where I organized the text into rows and columns and overid the css to add some customization-->
-    <div class="container">
+    <div class="container padding-top">
         <div class="row row-margin">
-            <div>
-                <div>
-                    <h2>Developer + Designer</h2>
-                    <section class="section">
-                        <div class="text-info">
-                            <p> I’ve always had a strong interest in design and technology. These interests are what drew me to LSU's School of Architecture. It’s also where I picked up my first coding chops through a minor in digital media arts. I took the concepts I learned into practice, as a scenic designer for broadcast television in New York City. After working for a few years, I felt the pull towards a career in an emerging and faster-paced industry.</p><br>
-                            <p> I moved back to Austin and enrolled in The Coding Bootcamp UT. The content of the course was instantly fascinating to me. The Adobe Creative Suite tools that I've used for years can now be supplemented with JavaScript, React, and other technologies to add functionality to static designs. I hope to use background in design along with the technical knowledge I've gained to jumpstart my career in UX/UI design.</p>
-                        </div>
-                    </section>
-                </div>
+            <h1>UX DESIGNER + DEVELOPER</h1>
+            <div class="logo-group">
+                <img id="diamond-top" src="assets/images/thumbnails/diamond-top.png" alt="diamonds">
+                <img id="diamond-bottom" src="assets/images/thumbnails/diamond-bottom.png" alt="diamonds">
+                <img usemap="#dev-map" class="diamonds" id="diamond-right" src="assets/images/thumbnails/diamond-right.png" alt="diamonds">
+                <img usemap="#design-map" class="diamonds" id="diamond-left" src="assets/images/thumbnails/diamond-left.png" alt="diamonds">
             </div>
+            <map id="design-map" name="design-map">
+                <area shape="poly" href="design.html" coords="0, 75, 75, 0, 150, 75, 75, 150" alt="click">
+            </map>
+            <map id="dev-map" name="dev-map">
+                <area shape="poly" href="development.html" coords="0, 75, 75, 0, 150, 75, 75, 150" alt="click">
+            </map>
+            <section style="padding-top:365px" class="section">
+                <div class="text-info">
+                    <hr style="width:100px;margin-bottom:30px">
+                    <p> I’ve always had a strong interest in design and technology. These interests are what drew me to LSU's School of Architecture, where I learned the fundamentals of visual and spacial design. It’s also where I picked up my first coding chops through a minor in Digital Media Arts. I took the concepts I learned into practice, as a scenic designer for broadcast television in New York City. After working for a few years, I felt the pull towards a career in an emerging and faster-paced industry.</p><br>
+                    <p> I moved back to Austin and enrolled in The Coding Bootcamp UT. The content of the course was instantly fascinating to me. The Adobe Creative Suite tools that I've used for years can now be supplemented with JavaScript, React, and other technologies to add functionality to static designs. I hope to use background in design along with the technical knowledge I've gained to jumpstart my career in UX design.</p>
+                </div>
+            </section>
         </div>
     </div>
     
@@ -101,11 +109,21 @@
     <script type="text/javascript">
 
         $(document).ready(function(){
-            $('.sidenav').sidenav();
-        });
+            $("#design-map").hover(function(){
+                $("#diamond-left").css("transform", "scale(0.9)");
+                }, function(){
+                $("#diamond-left").css("transform", "scale(1)");
+            });
 
-        $(document).ready(function(){
-            $('.parallax').parallax();
+            $("#dev-map").hover(function(){
+                $("#diamond-right").css("transform", "scale(0.9)");
+                }, function(){
+                $("#diamond-right").css("transform", "scale(1)");
+            });
+
+            $('.sidenav').sidenav();
+
+            $('.tooltipped').tooltip();
         });
 
     </script>

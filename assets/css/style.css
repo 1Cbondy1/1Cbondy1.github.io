@@ -12,6 +12,16 @@ body {
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    font-size:38px;
+    font-weight:800;
+    padding-bottom:20px;
 }
 
 h2 {
@@ -63,6 +73,53 @@ ul .right {
     line-height: 1.5;
     font-size: 16px;
     color: black;
+}
+
+#diamond-top {
+    position:absolute;
+    top:0px;
+    left:0;
+    right:0;
+    width: 150px;
+    height: 150px;
+    margin:auto;
+}
+
+#diamond-bottom {
+    position:absolute;
+    top:170px;
+    left:0;
+    right:0;
+    width: 150px;
+    height: 150px;
+    margin:auto;
+}
+
+#diamond-right {
+    position:absolute;
+    top:85px;
+    left:170px;
+    right:0;
+}
+
+#diamond-left {
+    position:absolute;
+    top:85px;
+    left:0px;
+    right:170px;
+}
+
+.diamonds {
+    width: 150px;
+    height: 150px;
+    margin:auto;
+}
+
+#diamond-left, #diamond-right {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
 }
 
 /* Navbar */
@@ -169,18 +226,46 @@ textarea {
 }
 
 .card {
+    position:relative;
     display: inline-block;
-    margin: 10px 10px 10px 10px;
-    width: 270px;
-    max-width: 90%;
+    margin: 5px 5px 5px 5px;
+    /* width: 270px; */
+    max-width: 100%;
 }
 
-.card:hover {
-    box-shadow: rgb(100, 100, 100) 5px 5px 20px;
+.hover-color {
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+    width:101%;
+    height:100%;
+    background:linear-gradient(#FF8D74,#FF5631);
+    color:white;
+    text-align:left;
+    font-weight:100;
+    padding:25px;
+    font-size:14px;
+    line-height:1.5;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+}
+
+.hover-color:hover {
+    opacity:0.95;
+}
+
+.c-title {
+    color: #FFF2E6;
+    font-size:18px;
+    margin-bottom:10px;
+    text-align:center;
 }
 
 .card .card-content {
-    padding:10px;
+    /* padding:10px; */
     /* background-color: #52C9C3; */
 }
 
@@ -223,6 +308,16 @@ i.right {
     position: absolute;
     right: 10px;
     padding:0px;
+}
+
+.col .row {
+    margin:0;
+    padding:0;
+}
+
+.row .col {
+    margin:0;
+    padding:0;
 }
 
 a {
@@ -283,6 +378,11 @@ nav .sidenav-trigger {
         overflow:hidden;
         object-fit:cover;
     }
+    .logo-group {
+        display:block;
+        position:relative;
+        transform: scale(1);
+    }
 }
 
 /* media query for medium and small screens */
@@ -298,6 +398,11 @@ nav .sidenav-trigger {
         height:400px;
         overflow:hidden;
         object-fit:cover;
+    }
+    .logo-group {
+        display:block;
+        position:relative;
+        transform: scale(1);
     }
 }
 
