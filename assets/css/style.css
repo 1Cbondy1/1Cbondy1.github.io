@@ -14,6 +14,12 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size:38px;
+    font-weight:800;
+    padding-bottom:20px;
+}
+
 h2 {
     font-size: 25px;
     text-align: left;
@@ -63,6 +69,46 @@ ul .right {
     line-height: 1.5;
     font-size: 16px;
     color: black;
+}
+
+#diamond-top {
+    position:absolute;
+    top:0px;
+    left:0;
+    right:0;
+}
+
+#diamond-bottom {
+    position:absolute;
+    top:160px;
+    left:0;
+    right:0;
+    width: 150px;
+    height: 150px;
+    margin:auto;
+}
+
+#diamond-right {
+    position:absolute;
+    top:80px;
+    left:160px;
+    right:0;
+}
+#diamond-left {
+    position:absolute;
+    top:80px;
+    left:0px;
+    right:160px;
+}
+
+.diamonds {
+    width: 150px;
+    height: 150px;
+    margin:auto;
+}
+
+.diamonds:hover {
+    transform: scale(1.05);
 }
 
 /* Navbar */
@@ -170,9 +216,9 @@ textarea {
 
 .card {
     display: inline-block;
-    margin: 10px 10px 10px 10px;
-    width: 270px;
-    max-width: 90%;
+    margin: 0px 0px 0px 0px;
+    /* width: 270px; */
+    max-width: 100%;
 }
 
 .card:hover {
@@ -180,7 +226,7 @@ textarea {
 }
 
 .card .card-content {
-    padding:10px;
+    /* padding:10px; */
     /* background-color: #52C9C3; */
 }
 
@@ -223,6 +269,11 @@ i.right {
     position: absolute;
     right: 10px;
     padding:0px;
+}
+
+.col .row {
+    margin-left:0;
+    margin-right:0;
 }
 
 a {
@@ -283,6 +334,11 @@ nav .sidenav-trigger {
         overflow:hidden;
         object-fit:cover;
     }
+    .logo-group {
+        display:block;
+        position:relative;
+        transform: scale(1);
+    }
 }
 
 /* media query for medium and small screens */
@@ -298,6 +354,11 @@ nav .sidenav-trigger {
         height:400px;
         overflow:hidden;
         object-fit:cover;
+    }
+    .logo-group {
+        display:block;
+        position:relative;
+        transform: scale(1);
     }
 }
 
