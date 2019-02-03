@@ -80,11 +80,14 @@ ul .right {
     top:0px;
     left:0;
     right:0;
+    width: 150px;
+    height: 150px;
+    margin:auto;
 }
 
 #diamond-bottom {
     position:absolute;
-    top:160px;
+    top:170px;
     left:0;
     right:0;
     width: 150px;
@@ -94,15 +97,16 @@ ul .right {
 
 #diamond-right {
     position:absolute;
-    top:80px;
-    left:160px;
+    top:85px;
+    left:170px;
     right:0;
 }
+
 #diamond-left {
     position:absolute;
-    top:80px;
+    top:85px;
     left:0px;
-    right:160px;
+    right:170px;
 }
 
 .diamonds {
@@ -111,8 +115,11 @@ ul .right {
     margin:auto;
 }
 
-.diamonds:hover {
-    transform: scale(1.05);
+#diamond-left, #diamond-right {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
 }
 
 /* Navbar */
@@ -226,10 +233,6 @@ textarea {
     max-width: 100%;
 }
 
-/* .card:hover {
-    box-shadow: rgb(100, 100, 100) 5px 5px 20px;
-} */
-
 .hover-color {
     position:absolute;
     top:0px;
@@ -255,7 +258,8 @@ textarea {
 }
 
 .c-title {
-    font-size:16px;
+    color: #FFF2E6;
+    font-size:18px;
     margin-bottom:10px;
     text-align:center;
 }

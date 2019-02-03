@@ -68,13 +68,19 @@
 
     <div class="container padding-top">
         <div class="row row-margin">
-                <h1>UX DESIGNER + DEVELOPER</h1>
+            <h1>UX DESIGNER + DEVELOPER</h1>
             <div class="logo-group">
-                <img class="diamonds" id="diamond-top" src="assets/images/thumbnails/index_diamond.png" alt="diamonds">
-                <img id="diamond-bottom" src="assets/images/thumbnails/index_diamond.png" alt="diamonds">
-                <img class="diamonds" id="diamond-right" src="assets/images/thumbnails/index_diamond.png" alt="diamonds">
-                <img class="diamonds" id="diamond-left" src="assets/images/thumbnails/index_diamond.png" alt="diamonds">
+                <img id="diamond-top" src="assets/images/thumbnails/diamond-top.png" alt="diamonds">
+                <img id="diamond-bottom" src="assets/images/thumbnails/diamond-bottom.png" alt="diamonds">
+                <img usemap="#dev-map" class="diamonds" id="diamond-right" src="assets/images/thumbnails/diamond-right.png" alt="diamonds">
+                <img usemap="#design-map" class="diamonds" id="diamond-left" src="assets/images/thumbnails/diamond-left.png" alt="diamonds">
             </div>
+            <map id="design-map" name="design-map">
+                <area shape="poly" href="design.html" coords="0, 75, 75, 0, 150, 75, 75, 150" alt="click">
+            </map>
+            <map id="dev-map" name="dev-map">
+                <area shape="poly" href="development.html" coords="0, 75, 75, 0, 150, 75, 75, 150" alt="click">
+            </map>
             <section style="padding-top:365px" class="section">
                 <div class="text-info">
                     <hr style="width:100px;margin-bottom:30px">
@@ -103,11 +109,21 @@
     <script type="text/javascript">
 
         $(document).ready(function(){
-            $('.sidenav').sidenav();
-        });
+            $("#design-map").hover(function(){
+                $("#diamond-left").css("transform", "scale(0.9)");
+                }, function(){
+                $("#diamond-left").css("transform", "scale(1)");
+            });
 
-        $(document).ready(function(){
-            $('.parallax').parallax();
+            $("#dev-map").hover(function(){
+                $("#diamond-right").css("transform", "scale(0.9)");
+                }, function(){
+                $("#diamond-right").css("transform", "scale(1)");
+            });
+
+            $('.sidenav').sidenav();
+
+            $('.tooltipped').tooltip();
         });
 
     </script>
