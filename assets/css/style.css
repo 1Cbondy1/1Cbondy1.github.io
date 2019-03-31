@@ -65,6 +65,10 @@ ul .right {
     padding-top:70px;
 }
 
+.padding-bottom {
+    padding-bottom:70px;
+}
+
 .text-info {
     text-align: justify;
     font-family: sans-serif;
@@ -155,6 +159,9 @@ nav ul a {
 }
 
 #footer {
+    /* position: fixed;
+    bottom: 0px;
+    z-index:10; */
     background: linear-gradient(white, lightgrey);
     width: 100%;
     color: black;
