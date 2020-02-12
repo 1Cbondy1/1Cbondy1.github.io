@@ -78,6 +78,9 @@ ul .right {
     font-size: 16px;
     color: black;
     margin: auto;
+}
+
+.text-bio {
     max-width: 600px;
 }
 
